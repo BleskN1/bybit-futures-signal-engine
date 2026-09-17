@@ -1,0 +1,20 @@
+# Multi-Factor Dynamic Ranking Configuration for USDT Perpetual Universe
+# Composite Rank = w_turnover * norm(turnover) + w_volume * norm(volume) +
+#                  w_oi * norm(open_interest) - w_spread * norm(spread) +
+#                  w_volatility * norm(volatility) + w_trades * norm(trades_activity)
+
+weights:
+  turnover_24h: 0.35      # 24h quote volume (USDT)
+  open_interest: 0.25     # Raw open interest in quote/base
+  volume_24h: 0.15        # 24h base contract volume
+  volatility: 0.10        # Price range percentage (High - Low) / Low
+  trades_activity: 0.10   # Activity count / turnover density
+  spread_penalty: 0.05    # Penalty for wider bid/ask spread (tight spread preferred)
+
+filters:
+  min_turnover_24h_usdt: 10000000.0  # Min $10M turnover to avoid illiquid tokens
+  min_open_interest_usdt: 2000000.0   # Min $2M Open Interest
+  max_bid_ask_spread_pct: 0.0015      # Max 0.15% spread
+  min_history_candles: 2000           # Must have sufficient historical depth
+  quote_coin: "USDT"                  # USDT Perps only
+  contract_status: "Trading"

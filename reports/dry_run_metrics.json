@@ -1,0 +1,171 @@
+{
+  "total_evaluations": 2000,
+  "status_counts": {
+    "IGNORE": 1976,
+    "WATCH": 24,
+    "SIGNAL": 0,
+    "STRONG_SIGNAL": 0
+  },
+  "status_pct": {
+    "IGNORE": 98.8,
+    "WATCH": 1.2,
+    "SIGNAL": 0.0,
+    "STRONG_SIGNAL": 0.0
+  },
+  "long_stats": {
+    "count": 2000,
+    "mean": 39.45,
+    "median": 39.5,
+    "std": 8.67,
+    "min": 16.0,
+    "max": 73.75,
+    "p25": 33.5,
+    "p50": 39.5,
+    "p75": 45.0,
+    "p90": 50.0,
+    "p95": 53.25,
+    "buckets_count": {
+      "0-39": 1027,
+      "40-59": 949,
+      "60-74": 24,
+      "75-84": 0,
+      "85-100": 0
+    },
+    "buckets_pct": {
+      "0-39": 51.35,
+      "40-59": 47.45,
+      "60-74": 1.2,
+      "75-84": 0.0,
+      "85-100": 0.0
+    }
+  },
+  "short_stats": {
+    "count": 2000,
+    "mean": 29.65,
+    "median": 29.25,
+    "std": 7.82,
+    "min": 11.25,
+    "max": 58.5,
+    "p25": 23.75,
+    "p50": 29.25,
+    "p75": 35.0,
+    "p90": 39.75,
+    "p95": 43.5,
+    "buckets_count": {
+      "0-39": 1801,
+      "40-59": 199,
+      "60-74": 0,
+      "75-84": 0,
+      "85-100": 0
+    },
+    "buckets_pct": {
+      "0-39": 90.05,
+      "40-59": 9.95,
+      "60-74": 0.0,
+      "75-84": 0.0,
+      "85-100": 0.0
+    }
+  },
+  "all_stats": {
+    "count": 4000,
+    "mean": 34.55,
+    "median": 34.25,
+    "std": 9.6,
+    "min": 11.25,
+    "max": 73.75,
+    "p25": 27.25,
+    "p50": 34.25,
+    "p75": 41.25,
+    "p90": 47.25,
+    "p95": 50.75,
+    "buckets_count": {
+      "0-39": 2828,
+      "40-59": 1148,
+      "60-74": 24,
+      "75-84": 0,
+      "85-100": 0
+    },
+    "buckets_pct": {
+      "0-39": 70.7,
+      "40-59": 28.7,
+      "60-74": 0.6,
+      "75-84": 0.0,
+      "85-100": 0.0
+    }
+  },
+  "regime_counts": {
+    "CONSOLIDATION": 1205,
+    "NORMAL": 415,
+    "EXPANSION": 84,
+    "TRENDING": 296
+  },
+  "regime_signals": {},
+  "component_stats": {
+    "htf_trend": {
+      "mean": 38.37,
+      "median": 40.0,
+      "std": 29.65,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "market_structure": {
+      "mean": 56.2,
+      "median": 50.0,
+      "std": 26.29,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "liquidity": {
+      "mean": 27.44,
+      "median": 30.0,
+      "std": 19.02,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "momentum": {
+      "mean": 56.48,
+      "median": 60.0,
+      "std": 23.56,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "volume": {
+      "mean": 57.81,
+      "median": 65.0,
+      "std": 27.92,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "volatility": {
+      "mean": 71.19,
+      "median": 65.0,
+      "std": 16.18,
+      "min": 25.0,
+      "max": 95.0
+    },
+    "derivatives": {
+      "mean": 32.0,
+      "median": 30.0,
+      "std": 6.2,
+      "min": 15.0,
+      "max": 40.0
+    },
+    "price_action": {
+      "mean": 25.43,
+      "median": 30.0,
+      "std": 17.07,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "component_correlations": {
+    "htf_trend": 0.392,
+    "market_structure": 0.456,
+    "liquidity": 0.285,
+    "momentum": 0.165,
+    "volume": 0.366,
+    "volatility": -0.034,
+    "derivatives": 0.293,
+    "price_action": 0.29
+  }
+}

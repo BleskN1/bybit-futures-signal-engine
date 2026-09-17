@@ -1,0 +1,47 @@
+# Quant Indicators and Market Structure Engine Configuration
+
+indicators:
+  ema:
+    periods: [20, 50, 100, 200]
+    slope_period: 5
+  adx:
+    period: 14
+  rsi:
+    period: 14
+  stoch_rsi:
+    rsi_period: 14
+    stoch_period: 14
+    k_period: 3
+    d_period: 3
+  macd:
+    fast_period: 12
+    slow_period: 26
+    signal_period: 9
+  roc:
+    period: 14
+  atr:
+    period: 14
+  bollinger:
+    period: 20
+    stddev: 2.0
+  volume:
+    sma_period: 20
+    vwap_window_bars: 288  # 24 hours on 5m, rolling window for 24/7 crypto
+  warmup_bars: 200         # Minimum closed candles required for is_ready
+
+market_structure:
+  swing:
+    left_bars: 3           # Confirming bars to the left of the pivot
+    right_bars: 3          # Confirming bars to the right before pivot is active
+    min_atr_distance: 0.5  # Optional filter: swing height vs ATR
+  rejection:
+    min_wick_ratio: 0.6    # Upper or lower wick must be >= 60% of candle range
+    max_body_ratio: 0.35   # Body must be <= 35% of candle range
+    min_range_atr: 0.8     # Candle range must be >= 0.8 * ATR(14)
+  engulfing:
+    min_body_ratio: 1.0    # Current body must completely envelop previous body
+    min_range_atr: 0.5     # Significant candle range vs ATR
+  regime:
+    consolidation_bb_bandwidth: 0.035  # BB bandwidth < 3.5%
+    expansion_volume_ratio: 1.5        # Volume > 1.5 * SMA(20)
+    expansion_atr_ratio: 1.25          # Current bar range > 1.25 * ATR(14)

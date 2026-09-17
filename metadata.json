@@ -1,0 +1,6 @@
+{
+  "name": "Bybit Futures Signal Engine",
+  "description": "Production-oriented quantitative signal engine monitoring Bybit USDT Perpetual Futures 24/7 with multi-factor universe ranking, multi-timeframe analysis, composite scoring, and paper performance tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

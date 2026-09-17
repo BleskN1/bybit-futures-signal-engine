@@ -1,0 +1,27 @@
+# Core Async & Networking
+httpx>=0.27.0
+aiohttp>=3.9.3
+websockets>=12.0
+asyncio-throttle>=1.0.2
+
+# Quantitative Analysis & Math
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Validation & Settings
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+python-dotenv>=1.0.1
+pyyaml>=6.0.1
+
+# Database & ORM
+SQLAlchemy>=2.0.28
+aiosqlite>=0.20.0
+
+# Telegram
+python-telegram-bot>=21.0.1
+
+# Testing & Quality
+pytest>=8.1.0
+pytest-asyncio>=0.23.5
+pytest-mock>=3.14.0

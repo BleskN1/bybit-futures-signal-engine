@@ -1,0 +1,57 @@
+# Quantitative Scoring Engine Configuration (Deterministic Baseline Heuristics)
+# Notice: Scores represent multi-factor rule alignment (0-100), NOT empirical win probability.
+
+scoring:
+  thresholds:
+    watch: 60
+    signal: 75
+    strong_signal: 85
+    min_directional_edge: 5.0
+
+  # Component weights (sum = 1.00 or 100)
+  weights:
+    htf_trend: 0.15
+    market_structure: 0.15
+    liquidity: 0.15
+    momentum: 0.10
+    volume: 0.10
+    volatility: 0.05
+    derivatives: 0.15
+    price_action: 0.15
+
+  timeframes:
+    global_context: "240" # 4H
+    structure: "60"       # 1H
+    setup: "15"           # 15M
+    entry: "5"            # 5M
+
+  risk:
+    min_rr_tp1: 1.5
+    min_rr_tp2: 2.0
+    sl_atr_multiplier: 1.5
+    tp1_r_multiple: 1.5
+    tp2_r_multiple: 3.0
+
+  cooldown:
+    minutes: 20
+
+  regime:
+    allow_choppy: false
+    allow_counter_trend: true
+    counter_trend_max_score: 75.0
+
+  entry:
+    atr_buffer_multiplier: 0.2
+
+  stop_loss:
+    atr_buffer_multiplier: 0.2
+
+  derivatives:
+    freshness_max_age_minutes: 60
+    penalty_if_stale: 30.0
+
+  telegram:
+    send_watch: false
+    send_signal: true
+    send_strong_signal: true
+    dry_run: true

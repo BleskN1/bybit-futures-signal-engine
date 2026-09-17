@@ -1,0 +1,204 @@
+{
+  "status": "READY FOR STEP 5",
+  "real_data": {
+    "top_20": "PASS",
+    "rest": "PASS",
+    "websocket": "PASS",
+    "5m": "PASS",
+    "15m": "PASS",
+    "1h": "PASS",
+    "4h": "PASS"
+  },
+  "lookahead_check": "PASS",
+  "derivatives": {
+    "oi": "PASS",
+    "funding": "PASS",
+    "liquidations": "PASS",
+    "june_2026_single_oi": "PASS"
+  },
+  "risk_levels": "PASS",
+  "telegram_dry_run": "PASS",
+  "evaluations_count": 18,
+  "signals_generated": 0,
+  "long_signals": 0,
+  "short_signals": 0,
+  "highest_score": 50.75,
+  "lowest_score": 34.75,
+  "examples": [
+    {
+      "example_num": 1,
+      "symbol": "BTCUSDT",
+      "timestamp": "2026-09-17T10:35:00+00:00",
+      "direction": "SHORT",
+      "long_score": 25.25,
+      "short_score": 50.75,
+      "directional_edge": 25.5,
+      "status": "IGNORE",
+      "regime": "CONSOLIDATION",
+      "component_scores": {
+        "htf_trend": 45.0,
+        "market_structure": 70.0,
+        "liquidity": 30.0,
+        "momentum": 75.0,
+        "volume": 100.0,
+        "volatility": 65.0,
+        "derivatives": 30.0,
+        "price_action": 25.0
+      },
+      "reason_codes": [
+        "M5_BEARISH_CONFIRMATION",
+        "HTF_STRONG_ADX_TREND",
+        "H1_TREND_CONFIRMATION",
+        "HH_HL_PROGRESSION"
+      ],
+      "entry_zone": "76291.0000 \u2013 76322.9595",
+      "current_price": 76291.0,
+      "SL": 76537.5595,
+      "TP1": 75605.0,
+      "TP2": 75306.5,
+      "RR_TP1": 3.04,
+      "RR_TP2": 4.34
+    },
+    {
+      "example_num": 2,
+      "symbol": "BTCUSDT",
+      "timestamp": "2026-09-17T10:15:00+00:00",
+      "direction": "SHORT",
+      "long_score": 28.75,
+      "short_score": 47.5,
+      "directional_edge": 18.75,
+      "status": "IGNORE",
+      "regime": "CONSOLIDATION",
+      "component_scores": {
+        "htf_trend": 45.0,
+        "market_structure": 70.0,
+        "liquidity": 20.0,
+        "momentum": 75.0,
+        "volume": 65.0,
+        "volatility": 85.0,
+        "derivatives": 30.0,
+        "price_action": 30.0
+      },
+      "reason_codes": [
+        "M5_BEARISH_CONFIRMATION",
+        "HTF_STRONG_ADX_TREND",
+        "H1_TREND_CONFIRMATION",
+        "HH_HL_PROGRESSION"
+      ],
+      "entry_zone": "76291.0000 \u2013 76323.7579",
+      "current_price": 76291.0,
+      "SL": 76538.3579,
+      "TP1": 75605.0,
+      "TP2": 75306.5,
+      "RR_TP1": 3.04,
+      "RR_TP2": 4.33
+    },
+    {
+      "example_num": 3,
+      "symbol": "BTCUSDT",
+      "timestamp": "2026-09-17T10:25:00+00:00",
+      "direction": "SHORT",
+      "long_score": 28.75,
+      "short_score": 47.5,
+      "directional_edge": 18.75,
+      "status": "IGNORE",
+      "regime": "CONSOLIDATION",
+      "component_scores": {
+        "htf_trend": 45.0,
+        "market_structure": 70.0,
+        "liquidity": 20.0,
+        "momentum": 75.0,
+        "volume": 65.0,
+        "volatility": 85.0,
+        "derivatives": 30.0,
+        "price_action": 30.0
+      },
+      "reason_codes": [
+        "M5_BEARISH_CONFIRMATION",
+        "HTF_STRONG_ADX_TREND",
+        "H1_TREND_CONFIRMATION",
+        "HH_HL_PROGRESSION"
+      ],
+      "entry_zone": "76291.0000 \u2013 76323.7579",
+      "current_price": 76291.0,
+      "SL": 76538.3579,
+      "TP1": 75605.0,
+      "TP2": 75306.5,
+      "RR_TP1": 3.04,
+      "RR_TP2": 4.33
+    },
+    {
+      "example_num": 4,
+      "symbol": "BTCUSDT",
+      "timestamp": "2026-09-17T10:30:00+00:00",
+      "direction": "SHORT",
+      "long_score": 29.0,
+      "short_score": 47.0,
+      "directional_edge": 18.0,
+      "status": "IGNORE",
+      "regime": "CONSOLIDATION",
+      "component_scores": {
+        "htf_trend": 45.0,
+        "market_structure": 70.0,
+        "liquidity": 30.0,
+        "momentum": 75.0,
+        "volume": 100.0,
+        "volatility": 65.0,
+        "derivatives": 30.0,
+        "price_action": 0.0
+      },
+      "reason_codes": [
+        "M5_BEARISH_CONFIRMATION",
+        "HTF_STRONG_ADX_TREND",
+        "H1_TREND_CONFIRMATION",
+        "HH_HL_PROGRESSION"
+      ],
+      "entry_zone": "76291.0000 \u2013 76322.9595",
+      "current_price": 76291.0,
+      "SL": 76537.5595,
+      "TP1": 75605.0,
+      "TP2": 75306.5,
+      "RR_TP1": 3.04,
+      "RR_TP2": 4.34
+    },
+    {
+      "example_num": 5,
+      "symbol": "BTCUSDT",
+      "timestamp": "2026-09-17T10:20:00+00:00",
+      "direction": "SHORT",
+      "long_score": 24.25,
+      "short_score": 46.75,
+      "directional_edge": 22.5,
+      "status": "IGNORE",
+      "regime": "CONSOLIDATION",
+      "component_scores": {
+        "htf_trend": 45.0,
+        "market_structure": 70.0,
+        "liquidity": 20.0,
+        "momentum": 75.0,
+        "volume": 65.0,
+        "volatility": 85.0,
+        "derivatives": 30.0,
+        "price_action": 25.0
+      },
+      "reason_codes": [
+        "M5_BEARISH_CONFIRMATION",
+        "HTF_STRONG_ADX_TREND",
+        "H1_TREND_CONFIRMATION",
+        "HH_HL_PROGRESSION"
+      ],
+      "entry_zone": "76291.0000 \u2013 76323.7579",
+      "current_price": 76291.0,
+      "SL": 76538.3579,
+      "TP1": 75605.0,
+      "TP2": 75306.5,
+      "RR_TP1": 3.04,
+      "RR_TP2": 4.33
+    }
+  ],
+  "errors": [],
+  "changes": [
+    "Synchronized candle timestamp alignment in MTFAnalyzer and BybitRestClient to strictly use closed candles only.",
+    "Integrated Bybit June 2026 single-counted Open Interest methodology (singleOpenInterest / singleOpenInterestValue) with fallback to bilateral / 2."
+  ]
+}

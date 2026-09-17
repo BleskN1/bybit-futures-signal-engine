@@ -1,0 +1,42 @@
+# STEP 4.5 — Dry Run Configuration
+# Read-Only Live Reality Check against public Bybit V5 endpoints
+
+dry_run:
+  enabled: true
+  mode: "read_only"
+  duration_minutes: 360  # Standard 6-hour test run
+  top_n_symbols: 20
+  timeframes: ["5", "15", "60", "240"]
+  bootstrap_candles: 300
+  min_evaluations: 1000
+  target_evaluations: 2000
+  persist_diagnostics: true
+  runtime_health_check_interval_seconds: 30
+
+  # OI Methodology (Post June 11, 2026 single-counted contracts)
+  open_interest:
+    standardize_single_counted: true
+    reference_field: "singleOpenInterest"
+    fallback_field: "openInterest"
+    ticker_scaling_factor: 0.5  # Bybit ticker reports bilateral OI; 0.5 converts to single-counted
+
+  # Data Quality Thresholds
+  data_quality:
+    max_gap_multiplier: 2.0
+    stale_derivatives_max_minutes: 60
+    fail_on_nan: true
+    fail_on_negative_price: true
+
+  # Telegram Dry-Run settings
+  telegram:
+    enabled: true
+    label: "DRY RUN — READ ONLY"
+    watermark: "🧪 [DRY RUN — NO ORDERS / NO TRADING]"
+    send_watch: false
+    send_signal: true
+    send_strong_signal: true
+
+  # Observability & Report
+  reporting:
+    output_report_path: "reports/dry_run_report.md"
+    output_metrics_json: "reports/dry_run_metrics.json"
